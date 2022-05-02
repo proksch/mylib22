@@ -28,4 +28,4 @@ jobs:
       - run: mvn -B -ntp clean deploy -s ${{ github.workspace }}/settings.xml
         env:
           # auth necessary to access GitHub Maven registries
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GHTOKEN }}
